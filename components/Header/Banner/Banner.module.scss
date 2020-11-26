@@ -1,0 +1,29 @@
+.banner {
+  padding: 2rem;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  width: 100%;
+  width: clamp(10, 100%, 75ch);
+
+  .fullName {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    .lastname {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+  }
+  .description {
+    font-size: clamp(2rem, 5vw, 3rem);
+
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner {
+    padding: 2rem 1rem;
+  }
+}

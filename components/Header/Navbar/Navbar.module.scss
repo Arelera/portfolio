@@ -1,0 +1,35 @@
+@import '../../../styles/colors.scss';
+
+.navbar {
+  --text: black;
+  --background: #fffa;
+  --height: 80px;
+
+  color: var(--text);
+  background: var(--background);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: var(--height);
+
+  transition: all 0.4s ease;
+
+  .navItem {
+    font-size: 1.5rem;
+  }
+
+  .navList {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.scrolled {
+  --text: black;
+  --background: #fffa;
+  --height: 50px;
+}

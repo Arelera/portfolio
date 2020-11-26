@@ -1,0 +1,14 @@
+.sectionHeader {
+  position: relative; // for wave
+  padding: 0 1rem;
+
+  display: flex; // wave is weird without this
+  justify-content: center;
+  .sectionTitle {
+    font-size: 3rem;
+
+    color: #252525;
+    background: #fff;
+    padding-bottom: 1rem;
+  }
+}
