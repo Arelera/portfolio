@@ -1,8 +1,8 @@
 @import '../../../styles/colors.scss';
 
 .navbar {
-  --text: black;
-  --background: #fffa;
+  --text: $dark-text;
+  --background: transparent;
   --height: 80px;
 
   color: var(--text);
@@ -11,13 +11,41 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   height: var(--height);
-
-  transition: all 0.4s ease;
+  transition: all 0.4s ease; // for scroll
+  a {
+    position: relative;
+    z-index: 20;
+  }
 
   .navItem {
     font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      background: #252525;
+      position: absolute;
+      z-index: 14;
+      transition: all 0.25s ease;
+      height: 3px;
+      width: 0px;
+    }
+
+    &::before {
+      left: 0px;
+    }
+    &::after {
+      right: 0px;
+      bottom: 0;
+    }
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   .navList {

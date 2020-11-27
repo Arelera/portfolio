@@ -1,14 +1,12 @@
+@import '../../styles/colors.scss';
+
 .sectionHeader {
   position: relative; // for wave
-  padding: 0 1rem;
-
-  display: flex; // wave is weird without this
-  justify-content: center;
+  text-align: center;
   .sectionTitle {
     font-size: 3rem;
-
-    color: #252525;
-    background: #fff;
+    font-weight: 600;
+    color: $dark-text;
     padding-bottom: 1rem;
   }
 }

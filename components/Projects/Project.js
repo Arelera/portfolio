@@ -7,7 +7,6 @@ import waves from '../waves/waves';
 
 export default function Project({ project }) {
   const Wave = waves[`Wave${project.waveNum}`];
-  const iconColor = project.textTheme === 'light' ? 'eee' : '333';
 
   return (
     <div
@@ -17,7 +16,16 @@ export default function Project({ project }) {
       style={{ background: `#${project.color}` }}
     >
       <Wave color={project.color} />
-      <div className={S.imgBox}></div>
+      <div className={S.imgBox}>
+        <img
+          className={S.img}
+          src={
+            // placeholder image
+            'https://images.unsplash.com/photo-1596709097416-6d4206796022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1046&q=80'
+          }
+          alt=""
+        />
+      </div>
 
       <div className={S.info}>
         <div className={S.titles}>
@@ -33,19 +41,19 @@ export default function Project({ project }) {
         <div className={S.links}>
           <div>
             <a className={S.linkIconS} href={project.githubLink}>
-              <GithubIcon color={iconColor} />
+              <GithubIcon />
             </a>
             <a className={S.linkIconS} href={project.demoLink}>
               {project.demoLink.includes('heroku') ? (
-                <HerokuIcon color={iconColor} />
+                <HerokuIcon />
               ) : (
-                <VercelIcon color={iconColor} />
+                <VercelIcon />
               )}
               <p className={S.undertitle}>Live Demo</p>
             </a>
           </div>
           <a className={S.linkIconS} href="#">
-            <ArrowIcon color={iconColor} />
+            <ArrowIcon />
           </a>
         </div>
       </div>

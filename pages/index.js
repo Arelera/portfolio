@@ -1,27 +1,50 @@
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Project from '../components/Projects/Project';
-import Projects from '../components/Projects/Projects';
 
-import SectionHeader from '../components/SectionHeader/SectionHeader';
+import Contact from '../components/Contact/Contact';
+import Header from '../components/Header/Header';
+import Projects from '../components/Projects/Projects';
+import Skills from '../components/Skills/Skills';
+import useScroll from '../hooks/useScroll';
 
 export default function Home() {
+  const [projectsRef, scrollToProjects] = useScroll();
+  const [skillsRef, scrollToSkills] = useScroll();
+  const [contactRef, scrollToContact] = useScroll();
+
   return (
     <div>
       <Head>
         <title>Arel Portfolio</title>
       </Head>
-      <Header />
-      <Projects projects={projects} />
-      <section>
-        <SectionHeader title="CONTACT" />
-      </section>
+      <Header
+        scrollToSkills={scrollToSkills}
+        scrollToProjects={scrollToProjects}
+        scrollToContact={scrollToContact}
+      />
+      <Skills skillsRef={skillsRef} />
+      <Projects projectsRef={projectsRef} projects={projects} />
+      <Contact contactRef={contactRef} />
     </div>
   );
 }
 
 // placeholder projects for now
 const projects = [
+  {
+    name: 'Wadap DUdes',
+    type: 'E-Commerce App',
+    description: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
+      'Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+    ],
+    images: [],
+    githubLink: '#',
+    demoLink: '#heroku',
+    textTheme: 'dark',
+    color: 'E7F9A9',
+    waveNum: 0,
+  },
   {
     name: 'Wadap DUdes',
     type: 'E-Commerce App',
@@ -63,7 +86,7 @@ const projects = [
     demoLink: '#',
     // stack: 'mern',
     color: 'EF476F',
-    waveNum: 3,
+    waveNum: 4,
   },
   {
     name: 'Wadap DUdes',
@@ -76,7 +99,7 @@ const projects = [
     githubLink: '#',
     demoLink: '#',
     color: 'D8A7CA',
-    waveNum: 4,
+    waveNum: 3,
   },
   {
     name: 'Wadap DUdes',

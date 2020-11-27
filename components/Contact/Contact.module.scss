@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.list {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+  z-index: 50;
+}
+
+.listItem {
+  color: $dark-text;
+  margin: 0 2rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

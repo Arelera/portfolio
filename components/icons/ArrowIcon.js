@@ -1,6 +1,6 @@
 import S from './Icon.module.scss';
 
-export default function GithubIcon({ color, size }) {
+export default function ArrowIcon({ color, size }) {
   return (
     <svg
       className={
@@ -19,4 +19,3 @@ export default function GithubIcon({ color, size }) {
     </svg>
   );
 }
-// fill={`#${color}`}

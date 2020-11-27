@@ -6,6 +6,7 @@ export default function GithubIcon({ color, size }) {
       className={
         size === 'large' ? S.iconL : size === 'med' ? S.iconM : S.iconS
       }
+      fill="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

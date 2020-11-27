@@ -1,0 +1,11 @@
+@import '../../styles/colors.scss';
+
+.footer {
+  position: relative;
+  background: $dark-text;
+  height: 100px;
+  width: 100%;
+  svg {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import S from './Icon.module.scss';
 
-export default function GithubIcon({ color, size }) {
+export default function MailIcon({ color, size }) {
   return (
     <svg
       className={
