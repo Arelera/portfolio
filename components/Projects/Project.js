@@ -10,21 +10,12 @@ export default function Project({ project }) {
 
   return (
     <div
-      className={`${S.box1} ${S.box} ${
-        project.textTheme === 'light' ? S.light : S.dark
-      }`}
+      className={`${S.box} ${project.textTheme === 'light' ? S.light : S.dark}`}
       style={{ background: `#${project.color}` }}
     >
       <Wave color={project.color} />
       <div className={S.imgBox}>
-        <img
-          className={S.img}
-          src={
-            // placeholder image
-            'https://images.unsplash.com/photo-1596709097416-6d4206796022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1046&q=80'
-          }
-          alt=""
-        />
+        <img className={S.img} src={project.images[0]} alt="" />
       </div>
 
       <div className={S.info}>
@@ -38,12 +29,24 @@ export default function Project({ project }) {
           </p>
         ))}
 
+        <ul className={S.techs}>
+          {project.techs.map((t, i) => (
+            <li className={S.tech} key={i}>
+              {t}
+            </li>
+          ))}
+        </ul>
+
         <div className={S.links}>
           <div>
-            <a className={S.linkIconS} href={project.githubLink}>
+            <a
+              className={S.linkIconS}
+              target="_blank"
+              href={project.githubLink}
+            >
               <GithubIcon />
             </a>
-            <a className={S.linkIconS} href={project.demoLink}>
+            <a className={S.linkIconS} target="_blank" href={project.demoLink}>
               {project.demoLink.includes('heroku') ? (
                 <HerokuIcon />
               ) : (
@@ -57,8 +60,6 @@ export default function Project({ project }) {
           </a>
         </div>
       </div>
-
-      {project.stack && <p className={S.stack}>{project.stack}</p>}
     </div>
   );
 }

@@ -7,10 +7,12 @@ export default function Header({
   scrollToProjects,
   scrollToContact,
   scrollToSkills,
+  scrollToTop,
 }) {
   return (
     <header className={S.header}>
       <Navbar
+        scrollToTop={scrollToTop}
         scrollToSkills={scrollToSkills}
         scrollToProjects={scrollToProjects}
         scrollToContact={scrollToContact}

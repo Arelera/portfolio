@@ -1,23 +1,24 @@
 @import '../../styles/colors.scss';
 
-@mixin theme($color) {
-  color: $color;
-  .undertitle {
-    color: transparentize($color, 0.2);
+.light {
+  color: $light-text;
+  .undertitle,
+  .tech {
+    color: transparentize($light-text, 0.2);
   }
 }
-
-.light {
-  @include theme($light-text);
-}
 .dark {
-  @include theme($dark-text);
+  color: $dark-text;
+  .undertitle,
+  .tech {
+    color: transparentize($dark-text, 0.2);
+  }
 }
 
 .box {
   position: relative;
-  min-height: 400px;
-  padding: 0 1rem 1.5rem;
+  min-height: 800px;
+  padding: 0 0 1.5rem 1rem;
 
   display: flex;
   align-items: center;
@@ -44,38 +45,33 @@
       text-align: center;
       .title {
         font-size: clamp(2.25rem, 5vw, 2.75rem);
+        margin-bottom: 0.25rem;
       }
       .undertitle {
+        margin-bottom: 1rem;
         font-weight: 400;
       }
     }
     .description {
       font-size: 1.05rem;
-      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       width: clamp(45ch, 100%, 75ch);
     }
+
+    .techs {
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .tech {
+        padding: 0 0.5rem;
+      }
+    }
+
     .links {
-      margin: 1rem;
+      margin: 1rem 0;
     }
   }
-}
-
-.stack {
-  position: absolute;
-  top: 3.25rem;
-  right: 2rem;
-  padding: 3px 6px;
-
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  line-height: 1;
-  color: $dark-text;
-
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  background: #fafafa;
-  text-shadow: 0px 0px 5px #ddd;
 }
 
 .links {
@@ -103,10 +99,14 @@
 @media screen and (max-width: 768px) {
   .box {
     flex-direction: column;
+    padding-left: 0;
     padding-bottom: 3rem;
     .imgBox {
       width: clamp(200px, 100%, 500px);
     }
+  }
+  .links {
+    padding: 0 2rem;
   }
 }
 

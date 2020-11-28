@@ -9,6 +9,7 @@ export default function Skills({ skillsRef }) {
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Front-end</h3>
           <ul className={S.list}>
+            <li>Javascript</li>
             <li>ReactJS</li>
             <li>React router</li>
             <li>Redux</li>
@@ -22,7 +23,6 @@ export default function Skills({ skillsRef }) {
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Back-end</h3>
           <ul className={S.list}>
-            <li>Node.js</li>
             <li>Express</li>
             <li>MongoDB</li>
             <li>Mongoose</li>

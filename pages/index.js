@@ -10,6 +10,7 @@ export default function Home() {
   const [projectsRef, scrollToProjects] = useScroll();
   const [skillsRef, scrollToSkills] = useScroll();
   const [contactRef, scrollToContact] = useScroll();
+  const [, scrollToTop] = useScroll();
 
   return (
     <div>
@@ -20,6 +21,7 @@ export default function Home() {
         scrollToSkills={scrollToSkills}
         scrollToProjects={scrollToProjects}
         scrollToContact={scrollToContact}
+        scrollToTop={scrollToTop}
       />
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} projects={projects} />
@@ -31,89 +33,108 @@ export default function Home() {
 // placeholder projects for now
 const projects = [
   {
-    name: 'Wadap DUdes',
-    type: 'E-Commerce App',
+    name: 'Portfolio',
+    type: 'Personal Portfolio',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'This is my portfolio site where I list my skills, showcase and give information about my projects and have my contact information. Statically generated with NextJS',
     ],
-    images: [],
-    githubLink: '#',
-    demoLink: '#heroku',
-    textTheme: 'dark',
-    color: 'E7F9A9',
+    techs: ['NextJS'],
+    images: ['proj-ss/port1.png'],
+    githubLink: 'https://github.com/Arelera/portfolio',
+    demoLink: 'https://portfolio-lemon-one.vercel.app/',
+    color: 'A8D0DB',
     waveNum: 0,
   },
   {
-    name: 'Wadap DUdes',
+    name: 'Wadap Store',
     type: 'E-Commerce App',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'An e-commerce app (without an actual payment system), where users register and login, create, edit, look at and delete their products and ratings/reviews.',
     ],
-    images: [''],
-    githubLink: '#',
-    demoLink: '#heroku',
-    // stack: 'pern',
-    color: 'A8D0DB',
+    techs: [
+      'ReactJS',
+      'React router',
+      'Redux',
+      'Sass',
+      'Express',
+      'PostgreSQL',
+      'Pg',
+      'RDS',
+      'Jsonwebtoken',
+      'Bcrypt',
+    ],
+    images: [
+      'proj-ss/ecom1.png',
+      'proj-ss/ecom2.png',
+      'proj-ss/ecom3.png',
+      'proj-ss/ecom4.png',
+      'proj-ss/ecom5.png',
+      ,
+    ],
+    githubLink: 'https://github.com/Arelera/ecommerce-app',
+    demoLink: 'https://wadapstore.herokuapp.com/',
+    textTheme: 'light',
+    color: '2B4570',
     waveNum: 1,
   },
+
   {
-    name: 'Wadap DUdes',
-    type: 'E-Commerce App',
+    name: 'Neather',
+    type: 'Weather App',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'A small weather app where users can search for a location by city or country name and see that locations current weather. Uses server-side rendering for the weather info page. Created with NextJS',
     ],
-    images: [''],
-    githubLink: '#',
-    demoLink: '#heroku',
-    // stack: 'pern',
+    techs: ['NextJS'],
+    images: ['proj-ss/n1.png', 'proj-ss/n2.png', 'proj-ss/n3.png'],
+    githubLink: 'https://github.com/Arelera/weather-app-nextjs',
+    demoLink: 'https://weather-app-nextjs.vercel.app/',
     color: 'E49273',
     waveNum: 2,
   },
   {
-    name: 'Wadap DUdes',
-    type: 'E-Commerce App',
+    name: 'Polllo',
+    type: 'Polling App',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'A polling app where users can create public/private polls, see all public polls on the home page, vote on their and others polls, and share the polls all without an account.',
     ],
-    images: [''],
-    githubLink: '#',
-    demoLink: '#',
-    // stack: 'mern',
+    techs: [
+      'ReactJS',
+      'React router',
+      'Styled Components',
+      'Express',
+      'PostgreSQL',
+      'Pg',
+      'RDS',
+    ],
+    images: [
+      'proj-ss/poll1.png',
+      'proj-ss/poll2.png',
+      'proj-ss/poll3.png',
+      'proj-ss/poll4.png',
+    ],
+    githubLink: 'https://github.com/Arelera/poll-app',
+    demoLink: 'https://polllo.herokuapp.com/',
     color: 'EF476F',
     waveNum: 4,
   },
   {
-    name: 'Wadap DUdes',
-    type: 'E-Commerce App',
+    name: 'Todo App',
+    type: 'Todo List App',
     description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
+      'A todo app where users can register and login, create projects where they can add the todos as they would like, mark them as complete or important, add descriptions or delete them.',
     ],
-    images: [''],
-    githubLink: '#',
-    demoLink: '#',
+    techs: [
+      'ReactJS',
+      'Redux',
+      'MongoDB',
+      'Mongoose',
+      'Jsonwebtoken',
+      'Bcrypt',
+    ],
+    images: ['proj-ss/todo2.png', 'proj-ss/todo1.png'],
+    githubLink: 'https://github.com/Arelera/todo-app',
+    demoLink: 'https://todo-app0.herokuapp.com',
     color: 'D8A7CA',
     waveNum: 3,
-  },
-  {
-    name: 'Wadap DUdes',
-    type: 'E-Commerce App',
-    description: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore on ullamco laboris nisi ut',
-    ],
-    images: [''],
-    githubLink: '#',
-    demoLink: '#heroku',
-    textTheme: 'light',
-    color: '2B4570',
-    waveNum: 5,
   },
 ];

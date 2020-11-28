@@ -4,7 +4,7 @@ import S from './DownButton.module.scss';
 export default function DownButton({ onClick }) {
   return (
     <div className={S.container}>
-      <a onClick={onClick} className={S.downButton}>
+      <a href="#skills" onClick={onClick} className={S.downButton}>
         <DownArrow />
       </a>
     </div>

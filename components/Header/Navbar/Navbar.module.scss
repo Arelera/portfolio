@@ -1,18 +1,14 @@
 @import '../../../styles/colors.scss';
 
 .navbar {
-  --text: $dark-text;
-  --background: transparent;
-  --height: 80px;
-
-  color: var(--text);
-  background: var(--background);
+  color: $dark-text;
+  background: transparent;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 20;
-  height: var(--height);
+  height: 80px;
   transition: all 0.4s ease; // for scroll
   a {
     position: relative;
@@ -27,23 +23,21 @@
     &::before,
     &::after {
       content: '';
-      background: #252525;
+      background: $dark-text;
       position: absolute;
-      z-index: 14;
-      transition: all 0.25s ease;
+      z-index: 14; // so it's under the text
+      transition: width 0.25s ease;
       height: 3px;
       width: 0px;
-    }
-
-    &::before {
-      left: 0px;
+      right: 0px;
     }
     &::after {
-      right: 0px;
-      bottom: 0;
+      bottom: 1px;
     }
     &:hover::before,
     &:hover::after {
+      right: auto;
+      left: 0;
       width: 100%;
     }
   }
@@ -57,7 +51,6 @@
 }
 
 .scrolled {
-  --text: black;
-  --background: #fffa;
-  --height: 50px;
+  background: #fffa;
+  height: 50px;
 }

@@ -6,12 +6,19 @@ export default function useScroll(behavior = 'smooth') {
   const [offsetPosition, setOffsetPosition] = useState();
 
   useEffect(() => {
-    setElementPosition(ref.current?.getBoundingClientRect().top);
-    setOffsetPosition(elementPosition - 50);
+    if (typeof window !== 'undefined') {
+      setElementPosition(
+        ref.current?.getBoundingClientRect().top + window.pageYOffset
+      );
+      setOffsetPosition(elementPosition - 50);
+    }
   });
 
+  // if ref is not used, it will scroll to top
   const scroll = () => {
-    scrollTo({ top: offsetPosition, behavior });
+    ref.current
+      ? scrollTo({ top: offsetPosition, behavior })
+      : scrollTo({ top: 0, behavior });
   };
 
   return [ref, scroll];

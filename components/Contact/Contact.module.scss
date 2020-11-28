@@ -16,3 +16,9 @@
     transform: translateY(-5px);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .listItem {
+    margin: 0 1rem;
+  }
+}

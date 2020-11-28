@@ -5,12 +5,13 @@ export default function Navbar({
   scrollToProjects,
   scrollToContact,
   scrollToSkills,
+  scrollToTop,
 }) {
   const [scrolled, setScrolled] = useState(false);
   const isBrowser = () => typeof window !== 'undefined';
 
   const changeStyle = () => {
-    window.scrollY >= window.visualViewport.height - 400
+    window.scrollY >= window.innerHeight - 400
       ? setScrolled(true)
       : setScrolled(false);
   };
@@ -23,16 +24,24 @@ export default function Navbar({
     <nav className={`${S.navbar} ${scrolled && S.scrolled}`}>
       <ul className={`${S.navList}`}>
         <li className={S.navItem}>
-          <a>Home</a>
+          <a href="#home" onClick={scrollToTop}>
+            Home
+          </a>
         </li>
         <li className={S.navItem}>
-          <a onClick={scrollToSkills}>Skills</a>
+          <a href="#skills" onClick={scrollToSkills}>
+            Skills
+          </a>
         </li>
         <li className={S.navItem}>
-          <a onClick={scrollToProjects}>Projects</a>
+          <a href="#projects" onClick={scrollToProjects}>
+            Projects
+          </a>
         </li>
         <li className={S.navItem}>
-          <a onClick={scrollToContact}>Contact</a>
+          <a href="#contact" onClick={scrollToContact}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
