@@ -17,7 +17,7 @@
 
 .box {
   position: relative;
-  min-height: 800px;
+  min-height: 400px;
   padding: 0 0 1.5rem 1rem;
 
   display: flex;
@@ -89,10 +89,6 @@
   transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.05);
-  }
-  .icon {
-    height: 35px;
-    width: 35px;
   }
 }
 

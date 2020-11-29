@@ -1,0 +1,33 @@
+{
+  "name":"Todo App",
+  "type":"Todo List App",
+  "description":[
+     "A todo app where users can register and login, create projects where they can add the todos as they would like, mark them as complete or important, add descriptions or delete them."
+  ],
+  "descriptionLong": [
+   "A MERN stack todo app. Users can create accounts and login, login is handled with Jsonwebtokens and the passwords are encrypted with Bcrypt.",
+   "Once a user is logged in they can create a project and start adding todo items to it, a project must be selected to be able to add a todo item.",
+   "After adding a todo, users can click on one and add a description to it on the right panel which gets saved 1 second after typing ends.",
+   "The Mongo database is hosted on MongoDB Atlas. There are 3 collections, projects, todos and users.",
+   "Projects collection has id, title and user which holds creators id.",
+   "Todos collection has id, important, completed and title.",
+   "Users collection has id, a todos array, name, username and passwordHash."
+   ],
+  "techs":[
+     "ReactJS",
+     "Redux",
+     "MongoDB",
+     "Mongoose",
+     "Jsonwebtoken",
+     "Bcrypt"
+  ],
+  "images":[
+     "proj-ss/todo2.png",
+     "proj-ss/todo1.png"
+  ],
+  "githubLink":"https://github.com/Arelera/todo-app",
+  "demoLink":"https://todo-app0.herokuapp.com",
+  "color":"A8D0DB",
+  "waveNum":3,
+  "order": 4
+}

@@ -1,17 +1,21 @@
 import S from './Project.module.scss';
+import Link from 'next/link';
 import GithubIcon from '../icons/GithubIcon';
+import Github2Icon from '../icons/Github2Icon';
 import HerokuIcon from '../icons/HerokuIcon';
 import VercelIcon from '../icons/VercelIcon';
-import ArrowIcon from '../icons/ArrowIcon';
+import ArrowRightIcon from '../icons/ArrowRightIcon';
 import waves from '../waves/waves';
 
-export default function Project({ project }) {
+export default function Project({ id, project }) {
   const Wave = waves[`Wave${project.waveNum}`];
 
   return (
     <div
       className={`${S.box} ${project.textTheme === 'light' ? S.light : S.dark}`}
-      style={{ background: `#${project.color}` }}
+      style={{
+        background: `#${project.color}`,
+      }}
     >
       <Wave color={project.color} />
       <div className={S.imgBox}>
@@ -49,15 +53,19 @@ export default function Project({ project }) {
             <a className={S.linkIconS} target="_blank" href={project.demoLink}>
               {project.demoLink.includes('heroku') ? (
                 <HerokuIcon />
-              ) : (
+              ) : project.demoLink.includes('vercel') ? (
                 <VercelIcon />
+              ) : (
+                <Github2Icon />
               )}
               <p className={S.undertitle}>Live Demo</p>
             </a>
           </div>
-          <a className={S.linkIconS} href="#">
-            <ArrowIcon />
-          </a>
+          <Link href={`/projects/${id}`}>
+            <a className={S.linkIconS}>
+              <ArrowRightIcon />
+            </a>
+          </Link>
         </div>
       </div>
     </div>

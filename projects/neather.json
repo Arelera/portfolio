@@ -1,0 +1,24 @@
+{
+  "name":"Neather",
+  "type":"Weather App",
+  "description":[
+     "A small weather app where users can search for a location by city or country name and see that locations current weather. Uses server-side rendering for the weather info page. Created with NextJS"
+  ],
+  "descriptionLong": [
+   "A weather app made with NextJs which uses server-side rendering on the weather info page.", 
+   "Users can search for a location by city or country name and see that locations current weather info which includes degrees (celsius or fahrenheit), weather, humidity and wind speed"
+  ],
+  "techs":[
+     "NextJS"
+  ],
+  "images":[
+     "proj-ss/n1.png",
+     "proj-ss/n2.png",
+     "proj-ss/n3.png"
+  ],
+  "githubLink":"https://github.com/Arelera/weather-app-nextjs",
+  "demoLink":"https://weather-app-nextjs.vercel.app/",
+  "color":"EF476F",
+  "waveNum":2,
+  "order": 2
+}

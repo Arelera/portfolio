@@ -1,0 +1,22 @@
+{
+  "name":"Calculator",
+  "type":"Calculator App",
+  "description":[
+     "A calculator app where the user can do calculations with the four operations."
+  ],
+  "descriptionLong": [
+    "A calculator app made with vanilla javascript. One of my first projects with javascript."
+  ],
+  "techs":[
+     "HTML5", "CSS3", "Javascript"
+  ],
+  "images":[
+     "proj-ss/calc1.png"
+  ],
+  "githubLink":"https://github.com/Arelera/calculator",
+  "demoLink":"https://arelera.github.io/calculator/",
+  "textTheme": "light",
+  "color":"4B7F52",
+  "waveNum":5,
+  "order": 5
+}

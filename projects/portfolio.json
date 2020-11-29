@@ -1,0 +1,24 @@
+{
+    "name":"Portfolio",
+    "type":"Personal Portfolio",
+    "description":[
+      "This is my portfolio site where I list my skills, showcase and give information about my projects and have my contact information. Statically generated with NextJS"
+    ],
+    "descriptionLong": [
+     "This is my personal portfolio site built and statically rendered with NextJS.",
+     "It has my contact information, links to linkedin and my resume, and showcases my projects with links to their repos and live demos.",
+     "The project infos are fetched from the projects/ directory with getStaticProps. The project pages are dynamically generated with getStaticPaths and getStaticProps."
+    ],
+    "techs":[
+      "NextJS"
+    ],
+    "images":[
+      "proj-ss/port1.png"
+    ],
+    "githubLink":"https://github.com/Arelera/portfolio",
+    "demoLink":"https://portfolio-lemon-one.vercel.app/",
+    "textTheme":"dark",
+    "color":"D8A7CA",
+    "waveNum":0,
+    "order": 0
+}

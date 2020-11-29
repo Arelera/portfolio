@@ -9,6 +9,8 @@ export default function Skills({ skillsRef }) {
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Front-end</h3>
           <ul className={S.list}>
+            <li>HTML5</li>
+            <li>CSS3</li>
             <li>Javascript</li>
             <li>ReactJS</li>
             <li>React router</li>

@@ -1,6 +1,6 @@
 import S from './Icon.module.scss';
 
-export default function ArrowIcon({ color, size }) {
+export default function ArrowLeftIcon({ size }) {
   return (
     <svg
       className={
@@ -10,12 +10,12 @@ export default function ArrowIcon({ color, size }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
-      <path stroke={`#${color}`} d="M15 10l5 5-5 5" />
-      <path stroke={`#${color}`} d="M4 4v7a4 4 0 004 4h12" />
+      <path d="M9 14L4 9l5-5" />
+      <path d="M20 20v-7a4 4 0 00-4-4H4" />
     </svg>
   );
 }

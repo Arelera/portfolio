@@ -1,0 +1,21 @@
+{
+  "name":"Etch a Sketch",
+  "type":"A Drawing Game",
+  "description":[
+     "An etch-a-sketch game where the user can draw with black or random colors, clear the board and change board size."
+  ],
+  "descriptionLong": [
+    "A calculator app made with vanilla javascript. "
+  ],
+  "techs":[
+     "HTML5", "CSS3", "Javascript"
+  ],
+  "images":[
+     "proj-ss/etch1.png"
+  ],
+  "githubLink":"https://github.com/Arelera/Etch-a-Sketch",
+  "demoLink":"https://arelera.github.io/Etch-a-Sketch/",
+  "color":"F2F79E",
+  "waveNum":2,
+  "order": 5
+}

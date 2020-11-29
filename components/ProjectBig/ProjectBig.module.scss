@@ -1,0 +1,108 @@
+@import '../../styles/colors.scss';
+
+.dark {
+  color: $dark-text;
+  .undertitle {
+    color: transparentize($dark-text, 0.2);
+  }
+}
+.light {
+  color: $light-text;
+  .undertitle {
+    color: transparentize($light-text, 0.2);
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem 5rem;
+}
+
+.content {
+  display: flex;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  padding-bottom: 2rem;
+  .leftArrow {
+    position: absolute;
+    margin: 0;
+    top: 1rem;
+    left: 0;
+  }
+
+  .title {
+    font-size: clamp(3rem, 10vw, 4rem);
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .undertitle {
+    font-size: 1.5rem;
+  }
+  .techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      padding: 0 0.5rem;
+    }
+  }
+}
+.leftSide {
+  flex-shrink: 0;
+  width: clamp(350px, 40%, 600px);
+  min-height: 400px;
+  margin: 0 auto;
+
+  .imgBox {
+    width: 100%;
+    max-height: 100%;
+    .img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0 1rem;
+}
+
+.link {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 0.5rem;
+
+  position: relative;
+  z-index: 5;
+
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.info {
+  font-size: 1.1rem;
+  margin: auto;
+  padding: 0 1rem 5rem;
+  width: clamp(45ch, 100%, 75ch);
+
+  .desc {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .leftSide {
+    width: 100%;
+  }
+}
