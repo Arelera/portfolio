@@ -2,30 +2,34 @@
 
 .dark {
   color: $dark-text;
-  .undertitle {
+  .undertitle,
+  .techs {
     color: transparentize($dark-text, 0.2);
   }
 }
 .light {
   color: $light-text;
-  .undertitle {
+  .undertitle,
+  .techs {
     color: transparentize($light-text, 0.2);
   }
 }
 
 .container {
+  min-height: 90vh;
   width: 100%;
   padding: 0 1rem 5rem;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
 }
 
 .header {
   text-align: center;
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   .leftArrow {
     position: absolute;
     margin: 0;
@@ -36,9 +40,9 @@
   .title {
     font-size: clamp(3rem, 10vw, 4rem);
     padding-top: 0.5rem;
-    margin-bottom: 0.5rem;
   }
   .undertitle {
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
   }
   .techs {
@@ -50,10 +54,10 @@
     }
   }
 }
-.leftSide {
+.topSide {
   flex-shrink: 0;
-  width: clamp(350px, 40%, 600px);
-  min-height: 400px;
+  width: clamp(350px, 60%, 800px);
+  min-height: 300px;
   margin: 0 auto;
 
   .imgBox {
@@ -69,7 +73,7 @@
 .links {
   display: flex;
   justify-content: space-around;
-  padding: 2rem 0 1rem;
+  padding: 1rem 0;
 }
 
 .link {
@@ -89,9 +93,9 @@
 
 .info {
   font-size: 1.1rem;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 1rem 5rem;
-  width: clamp(45ch, 100%, 75ch);
+  width: min(100%, 75ch);
 
   .desc {
     margin-bottom: 0.5rem;
@@ -102,7 +106,10 @@
   .content {
     flex-direction: column;
   }
-  .leftSide {
+  .topSide {
     width: 100%;
+  }
+  .info {
+    padding: 0;
   }
 }

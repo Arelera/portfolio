@@ -20,29 +20,23 @@ export default function Navbar({
     return () => window.removeEventListener('scroll', changeStyle);
   }, [isBrowser() && window.scrollY]);
 
+  const navItems = [
+    { text: 'Home', href: '#home', onClick: scrollToTop },
+    { text: 'Skills', href: '#skills', onClick: scrollToSkills },
+    { text: 'Projects', href: '#projects', onClick: scrollToProjects },
+    { text: 'Contact', href: '#contact', onClick: scrollToContact },
+  ];
+
   return (
     <nav className={`${S.navbar} ${scrolled && S.scrolled}`}>
       <ul className={`${S.navList}`}>
-        <li className={S.navItem}>
-          <a href="#home" onClick={scrollToTop}>
-            Home
-          </a>
-        </li>
-        <li className={S.navItem}>
-          <a href="#skills" onClick={scrollToSkills}>
-            Skills
-          </a>
-        </li>
-        <li className={S.navItem}>
-          <a href="#projects" onClick={scrollToProjects}>
-            Projects
-          </a>
-        </li>
-        <li className={S.navItem}>
-          <a href="#contact" onClick={scrollToContact}>
-            Contact
-          </a>
-        </li>
+        {navItems.map((item, i) => (
+          <li className={S.navItem} key={i}>
+            <a href={item.href} onClick={item.onClick}>
+              {item.text}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

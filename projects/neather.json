@@ -2,7 +2,7 @@
   "name":"Neather",
   "type":"Weather App",
   "description":[
-     "A small weather app where users can search for a location by city or country name and see that locations current weather. Uses server-side rendering for the weather info page. Created with NextJS"
+     "A small weather app where users can search for a location by city or country name and see that locations current weather. Uses server-side rendering for the weather info page."
   ],
   "descriptionLong": [
    "A weather app made with NextJs which uses server-side rendering on the weather info page.", 

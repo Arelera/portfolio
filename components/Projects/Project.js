@@ -6,6 +6,7 @@ import HerokuIcon from '../icons/HerokuIcon';
 import VercelIcon from '../icons/VercelIcon';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 import waves from '../waves/waves';
+import Carousel from '../Carousel/Carousel';
 
 export default function Project({ id, project }) {
   const Wave = waves[`Wave${project.waveNum}`];
@@ -19,7 +20,8 @@ export default function Project({ id, project }) {
     >
       <Wave color={project.color} />
       <div className={S.imgBox}>
-        <img className={S.img} src={project.images[0]} alt="" />
+        {/* <img className={S.img} src={project.images[0]} alt="" /> */}
+        <Carousel images={project.images} />
       </div>
 
       <div className={S.info}>

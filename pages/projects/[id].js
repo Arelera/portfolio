@@ -11,7 +11,6 @@ export default function ProjectPage({ project }) {
 
 export async function getStaticPaths() {
   const paths = getAllProjectsIds();
-  console.log({ paths });
   return {
     paths,
     fallback: false,
@@ -21,7 +20,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const id = params.id;
   const project = getProjectData(id);
-  console.log({ project });
   return {
     props: {
       project,

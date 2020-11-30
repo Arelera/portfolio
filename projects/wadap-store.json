@@ -7,7 +7,9 @@
   "descriptionLong": [
    "An e-commerce app where users can create an account and login, login is handled by Jsonwebtokens and the password is encrypted with Bcrypt.",
 
-   "Once logged in, they can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side. The returned image url and its path in the Storage(for deleting) is sent to the backend along with other product info to be saved in the database", 
+   "Once logged in, they can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side.", 
+   
+   "The returned image url and its path in the Storage (for deleting) is sent to the backend along with other product info to be saved in the database.", 
 
    "After a product is added, the user will be redirected to the added products page. Products creator can edit or delete their products.",
 
@@ -46,7 +48,8 @@
      "proj-ss/ecom3.png",
      "proj-ss/ecom4.png",
      "proj-ss/ecom5.png",
-     null
+     "proj-ss/ecom6.png"
+     
   ],
   "githubLink":"https://github.com/Arelera/ecommerce-app",
   "demoLink":"https://wadapstore.herokuapp.com/",

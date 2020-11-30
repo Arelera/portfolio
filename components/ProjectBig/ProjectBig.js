@@ -1,10 +1,12 @@
-import Link from 'next/link';
 import S from './ProjectBig.module.scss';
+import Link from 'next/link';
+import Head from 'next/head';
 import ArrowLeftIcon from '../icons/ArrowLeftIcon';
 import GithubIcon from '../icons/GithubIcon';
 import Github2Icon from '../icons/Github2Icon';
 import HerokuIcon from '../icons/HerokuIcon';
 import VercelIcon from '../icons/VercelIcon';
+import Carousel from '../Carousel/Carousel';
 
 export default function ProjectBig({ project }) {
   const {
@@ -24,6 +26,9 @@ export default function ProjectBig({ project }) {
       className={`${S.container} ${textTheme === 'light' ? S.light : S.dark}`}
       style={{ background: `#${color}` }}
     >
+      <Head>
+        <title>{name} | Arel</title>
+      </Head>
       <header className={S.header}>
         <Link href="/">
           <a className={`${S.leftArrow} ${S.link}`}>
@@ -34,15 +39,15 @@ export default function ProjectBig({ project }) {
         <h2 className={S.undertitle}>{type}</h2>
         <ul className={S.techs}>
           {techs.map((tech) => (
-            <li>{tech}</li>
+            <li key={tech}>{tech}</li>
           ))}
         </ul>
       </header>
 
       <div className={S.content}>
-        <div className={S.leftSide}>
+        <div className={S.topSide}>
           <div className={S.imgBox}>
-            <img className={S.img} src={`../${images[0]}`} alt="" />
+            <Carousel images={images.map((img) => `../${img}`)} />
           </div>
 
           <div className={S.links}>

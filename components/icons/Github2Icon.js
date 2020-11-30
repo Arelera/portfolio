@@ -7,7 +7,7 @@ export default function Github2Icon({ color, size }) {
         size === 'large' ? S.iconL : size === 'med' ? S.iconM : S.iconS
       }
       fill="none"
-      strokeWidth="2"
+      strokeWidth="1"
       stroke="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

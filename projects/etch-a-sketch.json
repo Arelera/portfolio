@@ -5,10 +5,11 @@
      "An etch-a-sketch game where the user can draw with black or random colors, clear the board and change board size."
   ],
   "descriptionLong": [
-    "A calculator app made with vanilla javascript. "
+    "An etch-a-sketch app where the users can draw with black or random colors. Clearing the board also gives a prompt to resize the board. ",
+    "One of my earliest projects with JavaScript"
   ],
   "techs":[
-     "HTML5", "CSS3", "Javascript"
+     "HTML5", "CSS3", "JavaScript"
   ],
   "images":[
      "proj-ss/etch1.png"

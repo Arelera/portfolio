@@ -7,7 +7,8 @@
     "descriptionLong": [
      "This is my personal portfolio site built and statically rendered with NextJS.",
      "It has my contact information, links to linkedin and my resume, and showcases my projects with links to their repos and live demos.",
-     "The project infos are fetched from the projects/ directory with getStaticProps. The project pages are dynamically generated with getStaticPaths and getStaticProps."
+     "The project infos are fetched from the projects/ directory with getStaticProps. The project pages are dynamically generated with getStaticPaths and getStaticProps.",
+     "Another project can be added by adding a json file with the required parameters to the projects folder in the root."
     ],
     "techs":[
       "NextJS"

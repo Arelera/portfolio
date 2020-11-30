@@ -1,0 +1,29 @@
+@import '../../styles/colors.scss';
+
+.carousel {
+  position: relative;
+  width: 100%;
+  .img {
+    width: 100%;
+  }
+}
+.btnLeft,
+.btnRight {
+  height: 80px;
+  width: 40px;
+  background: transparentize($light-text, 0.4);
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnLeft {
+  left: 0;
+}
+.btnRight {
+  right: 0;
+}
+
+.hide {
+  display: none;
+}

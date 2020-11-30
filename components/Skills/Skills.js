@@ -11,7 +11,7 @@ export default function Skills({ skillsRef }) {
           <ul className={S.list}>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Javascript</li>
+            <li>JavaScript</li>
             <li>ReactJS</li>
             <li>React router</li>
             <li>Redux</li>

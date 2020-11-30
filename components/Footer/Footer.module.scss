@@ -1,11 +1,52 @@
 @import '../../styles/colors.scss';
 
 .footer {
+  color: $light-text;
   position: relative;
+  padding: 2rem;
+  color: $blue-light;
   background: $dark-text;
-  height: 100px;
+  min-height: 100px;
   width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
   svg {
     width: 100%;
+  }
+}
+
+.personal {
+  h4 {
+    font-size: 1.75rem;
+  }
+  h5 {
+    color: transparentize($blue-light, 0.2);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+.contactInfo {
+  h4 {
+    font-size: 1.25;
+  }
+  li {
+    color: transparentize($blue-light, 0.2);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
   }
 }

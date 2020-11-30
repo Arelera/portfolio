@@ -5,10 +5,10 @@
      "A calculator app where the user can do calculations with the four operations."
   ],
   "descriptionLong": [
-    "A calculator app made with vanilla javascript. One of my first projects with javascript."
+    "A calculator app made with vanilla JavaScript. One of my first projects with JavaScript."
   ],
   "techs":[
-     "HTML5", "CSS3", "Javascript"
+     "HTML5", "CSS3", "JavaScript"
   ],
   "images":[
      "proj-ss/calc1.png"

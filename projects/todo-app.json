@@ -2,7 +2,7 @@
   "name":"Todo App",
   "type":"Todo List App",
   "description":[
-     "A todo app where users can register and login, create projects where they can add the todos as they would like, mark them as complete or important, add descriptions or delete them."
+     "A todo app where users can create accounts, create projects and add todo items to them, mark them as complete or important, add descriptions or delete them."
   ],
   "descriptionLong": [
    "A MERN stack todo app. Users can create accounts and login, login is handled with Jsonwebtokens and the passwords are encrypted with Bcrypt.",

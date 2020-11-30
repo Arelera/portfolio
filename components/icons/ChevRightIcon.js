@@ -1,6 +1,6 @@
 import S from './Icon.module.scss';
 
-export default function ArrowLeftIcon({ size }) {
+export default function ChevRightIcon({ size }) {
   return (
     <svg
       className={
@@ -14,8 +14,7 @@ export default function ArrowLeftIcon({ size }) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M9 14L4 9l5-5" />
-      <path d="M20 20v-7a4 4 0 00-4-4H4" />
+      <path d="M9 18l6-6-6-6" />
     </svg>
   );
 }
