@@ -15,8 +15,8 @@
   ],
   "githubLink":"https://github.com/Arelera/calculator",
   "demoLink":"https://arelera.github.io/calculator/",
-  "textTheme": "light",
-  "color":"4B7F52",
+  "textTheme": "dark",
+  "color":"F9D6C5",
   "waveNum":5,
   "order": 5
 }

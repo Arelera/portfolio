@@ -22,7 +22,7 @@ export default function ProjectBig({ project }) {
   } = project;
 
   return (
-    <div
+    <section
       className={`${S.container} ${textTheme === 'light' ? S.light : S.dark}`}
       style={{ background: `#${color}` }}
     >
@@ -77,6 +77,6 @@ export default function ProjectBig({ project }) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

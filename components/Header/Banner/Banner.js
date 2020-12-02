@@ -17,10 +17,10 @@ export default function Banner({ scrollToSkills }) {
         <a href="#" target="_blank">
           <LinkedinIcon size="med" />
         </a>
-        <a href="#" target="_blank">
+        <a href="https://github.com/Arelera" target="_blank">
           <GithubIcon size="med" />
         </a>
-        <a href="https://github.com/Arelera" target="_blank">
+        <a href="#" target="_blank">
           <MailIcon size="med" />
         </a>
         <a href="#" target="_blank">

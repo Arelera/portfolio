@@ -2,23 +2,28 @@
   "name":"Wadap Store",
   "type":"E-Commerce App",
   "description":[
-     "An e-commerce app (without an actual payment system), where users register and login, create, edit, look at and delete their products and ratings/comments."
+     "An e-commerce app (without an actual payment system), that allows users to post theirs and rate others products."
   ],
   "descriptionLong": [
-   "An e-commerce app where users can create an account and login, login is handled by Jsonwebtokens and the password is encrypted with Bcrypt.",
+   "An e-commerce app that allows users to post and rate products.",
 
-   "Once logged in, they can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side.", 
+   "Users can register and login, login is handled by Jsonwebtoken and saved in localstorage and the password is encrypted with Bcrypt.",
+
+   "Once logged in, every product from any category is fetched and stored in Redux store and displayed on the main page, with the latest added products showing first.", 
    
-   "The returned image url and its path in the Storage (for deleting) is sent to the backend along with other product info to be saved in the database.", 
+   "Users can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side.", 
+   
+   "The returned image url and its path in the Storage (for deleting) is sent to the Express backend along with other product info to be saved in the PSQL database.", 
 
    "After a product is added, the user will be redirected to the added products page. Products creator can edit or delete their products.",
 
    "A user cannot rate/comment on their own products, and they can rate/comment on other products only once.",
-   "Users can view products by their category/subcategory or search them by name, can view own products from the navbar menu, sort products by date and price.",
+
+   "Users can view products by their category/subcategory or search them by name, can go to own products from the navbar menu.",
    
-   "Once a user clicks on a product they are taken to that products page where they can view more images and info about the product, add it to their cart, rate and comment on it. Users can edit ratings/comments or delete them.",
+   "Clicking on a product takes the user to that products page where they can view more images and info about the product, add it to the cart, rate and comment on it. Users can edit own ratings/comments or delete them.",
    
-   "Cart items are saved in global state with Redux and are also saved in localstorage so the user won't lose their cart items on the same device. After a product is added to the cart, the user can view them by clicking on the cart icon which shows the total price, item amounts or the link to the checkout page.",
+   "Cart is saved in the Redux store and in localstorage so the user won't lose their cart items on the same device. Once a product is added to the cart, it can be seen by clicking the cart icon which shows the total, item amounts and the link to the checkout page.",
    
    "On the checkout page users can remove products, change their amount or checkout. Checking out displays the total price and then clears the cart.",
    
@@ -26,9 +31,7 @@
    "The PostgreSQL database is hosted on RDS and the database has 3 tables:",
    "Users: id, username, email, passwordHash, products, ratings, createdAt.",
    "Products: id, name, description, images, price, category, subcategory, creator, createdAt, stock.",
-   "Ratings: id, creator, rating, comment, product, createdAt.",
-   
-   "Product images are stored in Firebase storage. When a product is deleted, the images of the product get deleted with the product."
+   "Ratings: id, creator, rating, comment, product, createdAt."
    ],
   "techs":[
      "ReactJS",
@@ -53,8 +56,8 @@
   ],
   "githubLink":"https://github.com/Arelera/ecommerce-app",
   "demoLink":"https://wadapstore.herokuapp.com/",
-  "textTheme": "light",
-  "color":"2B4570",
+  "textTheme": "dark",
+  "color":"F8AEB0",
   "waveNum":1,
   "order": 1
 }

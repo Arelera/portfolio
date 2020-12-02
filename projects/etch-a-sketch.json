@@ -16,7 +16,8 @@
   ],
   "githubLink":"https://github.com/Arelera/Etch-a-Sketch",
   "demoLink":"https://arelera.github.io/Etch-a-Sketch/",
-  "color":"F2F79E",
+  "textTheme": "light",
+  "color":"3A445D",
   "waveNum":2,
   "order": 5
 }

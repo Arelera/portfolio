@@ -4,7 +4,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 export default function Skills({ skillsRef }) {
   return (
     <section ref={skillsRef} className={S.skills}>
-      <SectionHeader title="Skills" />
+      <SectionHeader title="SKILLS" />
       <div className={S.lists}>
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Front-end</h3>
@@ -12,10 +12,8 @@ export default function Skills({ skillsRef }) {
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
-            <li>ReactJS</li>
-            <li>React router</li>
-            <li>Redux</li>
-            <li>Redux thunk</li>
+            <li>ReactJS, react router</li>
+            <li>Redux, redux thunk</li>
             <li>NextJS</li>
             <li>Styled Components</li>
             <li>Sass</li>

@@ -1,4 +1,5 @@
 import S from './Footer.module.scss';
+import Link from 'next/link';
 import Wave from '../waves/Wave0';
 
 export default function Footer() {
@@ -6,7 +7,11 @@ export default function Footer() {
     <footer className={S.footer}>
       <Wave color="252525" />
       <div className={S.personal}>
-        <h4>Arel Alkım Yurtsevenler</h4>
+        <Link href="/">
+          <a>
+            <h4>Arel Alkım Yurtsevenler</h4>
+          </a>
+        </Link>
         <h5>Web Developer</h5>
       </div>
       <div className={S.contactInfo}>

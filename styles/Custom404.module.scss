@@ -1,0 +1,29 @@
+@import './colors.scss';
+
+.container {
+  height: calc(100vh - 170px);
+  text-align: center;
+  color: $dark-text;
+  padding: 8rem 0;
+}
+
+.h1Box {
+  position: relative;
+  display: inline-block;
+}
+
+.h1 {
+  font-size: 4rem;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: $blue-light;
+    bottom: 0;
+    left: 0;
+  }
+}
+.h2 {
+  font-size: 2.5rem;
+}

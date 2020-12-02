@@ -1,11 +1,10 @@
 @import '../../styles/colors.scss';
 
 .footer {
-  color: $light-text;
   position: relative;
-  padding: 2rem;
-  color: $blue-light;
+  color: $orange-light;
   background: $dark-text;
+  padding: 2rem;
   min-height: 100px;
   width: 100%;
 
@@ -13,10 +12,12 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  gap: 2rem;
   svg {
     width: 100%;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -25,7 +26,7 @@
     font-size: 1.75rem;
   }
   h5 {
-    color: transparentize($blue-light, 0.2);
+    color: transparentize($orange-light, 0.2);
     font-weight: 400;
     font-size: 1.5rem;
   }
@@ -36,10 +37,7 @@
     font-size: 1.25;
   }
   li {
-    color: transparentize($blue-light, 0.2);
-  }
-  a:hover {
-    text-decoration: underline;
+    color: transparentize($orange-light, 0.2);
   }
 }
 
