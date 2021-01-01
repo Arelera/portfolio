@@ -28,7 +28,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
+            <a href="/resume1t.pdf" target="_blank">
               Resume
             </a>
           </li>

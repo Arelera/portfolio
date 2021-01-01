@@ -1,42 +1,39 @@
 {
-  "name":"Todo App",
-  "type":"Todo List App",
-  "description":[
-     "A todo app where users can create accounts, create projects and add todo items to them, mark them as complete or important, add descriptions or delete them."
+  "name": "Todo App",
+  "type": "Todo List App",
+  "description": [
+    "A todo app where users can create accounts, create projects and add todo items to them, mark them as complete or important, add descriptions or delete them."
   ],
   "descriptionLong": [
-   "A MERN stack todo app. Users can create accounts and login, login is handled with Jsonwebtokens and the passwords are encrypted with Bcrypt.",
+    "A MERN stack todo app. Users can create accounts and login, login is handled with Jsonwebtokens and the passwords are encrypted with Bcrypt.",
 
-   "A logged in user can create a project and add todo items to it, a project must be selected to be able to add a todo item. The projects and the todos are stored in the Redux store.", 
-   
-   "When a user clicks on a project, only the todos that have chosen projects id as their project id are displayed, the rest is filtered out. Clicking All displays all todos.",
+    "A logged in user can create a project and add todo items to it, a project must be selected to be able to add a todo item. The projects and the todos are stored in the Redux store.",
 
-   "After adding a todo, users can click on one and add a description to it on the right panel which gets saved 1 second after typing ends.",
+    "When a user clicks on a project, only the todos that have chosen projects id as their project id are displayed, the rest is filtered out. Clicking All displays all todos.",
 
-   "The Mongo database is hosted on MongoDB Atlas. There are 3 collections, projects, todos and users.",
+    "After adding a todo, users can click on one and add a description to it on the right panel which gets saved 1 second after typing ends.",
 
-   "Projects collection has id, title and user which holds creators id.",
-   "Todos collection has id, important, completed, project, title and user.",
+    "The Mongo database is hosted on MongoDB Atlas. There are 3 collections, projects, todos and users.",
 
-   "Users collection has id, a todos array, name, username and passwordHash."
-   ],
-  "techs":[
-     "ReactJS",
-     "Redux",
-     "Express",
-     "MongoDB",
-     "Mongoose",
-     "Jsonwebtoken",
-     "Bcrypt"
+    "Projects collection has id, title and user which holds creators id.",
+    "Todos collection has id, important, completed, project, title and user.",
+
+    "Users collection has id, a todos array, name, username and passwordHash."
   ],
-  "images":[
-     "proj-ss/todo2.png",
-     "proj-ss/todo1.png"
+  "techs": [
+    "ReactJS",
+    "Redux",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "Jsonwebtoken",
+    "Bcrypt"
   ],
-  "githubLink":"https://github.com/Arelera/todo-app",
-  "demoLink":"https://todo-app0.herokuapp.com",
+  "images": ["proj-ss/todo2.png", "proj-ss/todo1.png"],
+  "githubLink": "https://github.com/Arelera/todo-app",
+  "demoLink": "https://todo-app0.herokuapp.com",
   "textTheme": "dark",
-  "color":"F8AEB0",
-  "waveNum":3,
-  "order": 4
+  "color": "F9D6C5",
+  "waveNum": 3,
+  "order": 5
 }

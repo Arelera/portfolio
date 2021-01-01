@@ -20,7 +20,7 @@ export default function Contact({ contactRef }) {
           </a>
         </li>
         <li className={S.listItem}>
-          <a href="#">
+          <a href="https://github.com/Arelera" target="_blank">
             <GithubIcon size="large" />
           </a>
         </li>

@@ -14,7 +14,6 @@ export default function Skills({ skillsRef }) {
             <li>JavaScript</li>
             <li>ReactJS, react router</li>
             <li>Redux, redux thunk</li>
-            <li>NextJS</li>
             <li>Styled Components</li>
             <li>Sass</li>
             <li>Axios</li>
@@ -28,7 +27,6 @@ export default function Skills({ skillsRef }) {
             <li>Mongoose</li>
             <li>PostgreSQL</li>
             <li>Pg (node-postgres)</li>
-            <li>RDS</li>
             <li>Jsonwebtoken</li>
             <li>Bcrypt</li>
           </ul>

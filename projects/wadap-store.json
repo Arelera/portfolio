@@ -1,63 +1,62 @@
 {
-  "name":"Wadap Store",
-  "type":"E-Commerce App",
-  "description":[
-     "An e-commerce app (without an actual payment system), that allows users to post theirs and rate others products."
+  "name": "Wadap Store",
+  "type": "E-Commerce App",
+  "description": [
+    "An e-commerce app (without an actual payment system), that allows users to post, view, rate and comment on products, add them to cart and checkout."
   ],
   "descriptionLong": [
-   "An e-commerce app that allows users to post and rate products.",
+    "An e-commerce app that allows users to post and rate products.",
 
-   "Users can register and login, login is handled by Jsonwebtoken and saved in localstorage and the password is encrypted with Bcrypt.",
+    "Users can register and login, login is handled by Jsonwebtoken and saved in localstorage and the password is encrypted with Bcrypt.",
 
-   "Once logged in, every product from any category is fetched and stored in Redux store and displayed on the main page, with the latest added products showing first.", 
-   
-   "Users can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side.", 
-   
-   "The returned image url and its path in the Storage (for deleting) is sent to the Express backend along with other product info to be saved in the PSQL database.", 
+    "Once logged in, every product from any category is fetched and stored in Redux store and displayed on the main page, with the latest added products showing first.",
 
-   "After a product is added, the user will be redirected to the added products page. Products creator can edit or delete their products.",
+    "Users can add products with images, name, description, price, stock, category and subcategory. Images are uploaded to Firebase Storage and is handled on the client-side.",
 
-   "A user cannot rate/comment on their own products, and they can rate/comment on other products only once.",
+    "The returned image url and its path in the Storage (for deleting) is sent to the Express backend along with other product info to be saved in the PSQL database.",
 
-   "Users can view products by their category/subcategory or search them by name, can go to own products from the navbar menu.",
-   
-   "Clicking on a product takes the user to that products page where they can view more images and info about the product, add it to the cart, rate and comment on it. Users can edit own ratings/comments or delete them.",
-   
-   "Cart is saved in the Redux store and in localstorage so the user won't lose their cart items on the same device. Once a product is added to the cart, it can be seen by clicking the cart icon which shows the total, item amounts and the link to the checkout page.",
-   
-   "On the checkout page users can remove products, change their amount or checkout. Checking out displays the total price and then clears the cart.",
-   
-   "Products, cart, loading, ratings and user state is managed with Redux.",
-   "The PostgreSQL database is hosted on RDS and the database has 3 tables:",
-   "Users: id, username, email, passwordHash, products, ratings, createdAt.",
-   "Products: id, name, description, images, price, category, subcategory, creator, createdAt, stock.",
-   "Ratings: id, creator, rating, comment, product, createdAt."
-   ],
-  "techs":[
-     "ReactJS",
-     "React router",
-     "Redux",
-     "Sass",
-     "Express",
-     "PostgreSQL",
-     "Pg",
-     "RDS",
-     "Jsonwebtoken",
-     "Bcrypt"
+    "After a product is added, the user will be redirected to the added products page. Products creator can edit or delete their products.",
+
+    "A user cannot rate/comment on their own products, and they can rate/comment on other products only once.",
+
+    "Users can view products by their category/subcategory or search them by name, can go to own products from the navbar menu.",
+
+    "Clicking on a product takes the user to that products page where they can view more images and info about the product, add it to the cart, rate and comment on it. Users can edit own ratings/comments or delete them.",
+
+    "Cart is saved in the Redux store and in localstorage so the user won't lose their cart items on the same device. Once a product is added to the cart, it can be seen by clicking the cart icon which shows the total, item amounts and the link to the checkout page.",
+
+    "On the checkout page users can remove products, change their amount or checkout. Checking out displays the total price and then clears the cart.",
+
+    "Products, cart, loading, ratings and user state is managed with Redux.",
+    "The PostgreSQL database is hosted on RDS and the database has 3 tables:",
+    "Users: id, username, email, passwordHash, products, ratings, createdAt.",
+    "Products: id, name, description, images, price, category, subcategory, creator, createdAt, stock.",
+    "Ratings: id, creator, rating, comment, product, createdAt."
   ],
-  "images":[
-     "proj-ss/ecom1.png",
-     "proj-ss/ecom2.png",
-     "proj-ss/ecom3.png",
-     "proj-ss/ecom4.png",
-     "proj-ss/ecom5.png",
-     "proj-ss/ecom6.png"
-     
+  "techs": [
+    "ReactJS",
+    "React router",
+    "Redux",
+    "Sass",
+    "Express",
+    "PostgreSQL",
+    "Pg",
+    "RDS",
+    "Jsonwebtoken",
+    "Bcrypt"
   ],
-  "githubLink":"https://github.com/Arelera/ecommerce-app",
-  "demoLink":"https://wadapstore.herokuapp.com/",
+  "images": [
+    "proj-ss/ecom1.png",
+    "proj-ss/ecom2.png",
+    "proj-ss/ecom3.png",
+    "proj-ss/ecom4.png",
+    "proj-ss/ecom5.png",
+    "proj-ss/ecom6.png"
+  ],
+  "githubLink": "https://github.com/Arelera/ecommerce-app",
+  "demoLink": "https://wadapstore.herokuapp.com/",
   "textTheme": "dark",
-  "color":"F8AEB0",
-  "waveNum":1,
-  "order": 1
+  "color": "F9D6C5",
+  "waveNum": 1,
+  "order": 2
 }

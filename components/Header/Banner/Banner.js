@@ -3,7 +3,6 @@ import DownButton from './DownButton/DownButton';
 import GithubIcon from '../../icons/GithubIcon';
 import MailIcon from '../../icons/MailIcon';
 import LinkedinIcon from '../../icons/LinkedinIcon';
-import ResumeIcon from '../../icons/ResumeIcon';
 
 export default function Banner({ scrollToSkills }) {
   return (
@@ -23,8 +22,8 @@ export default function Banner({ scrollToSkills }) {
         <a href="#" target="_blank">
           <MailIcon size="med" />
         </a>
-        <a href="#" target="_blank">
-          <ResumeIcon size="med" />
+        <a href="/resume1t.pdf" target="_blank">
+          <h3 className={S.resume}>RESUME</h3>
         </a>
       </div>
 

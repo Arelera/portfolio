@@ -1,39 +1,39 @@
 {
-  "name":"Polllo",
-  "type":"Polling App",
-  "description":[
-     "A polling app where users can create public/private polls, see all public polls on the home page, vote on their and others polls, and share the polls all without an account."
+  "name": "Polllo",
+  "type": "Polling App",
+  "description": [
+    "A polling app where users can create public/private polls, see all public polls on the home page, vote on their and others polls, and share the polls all without an account."
   ],
   "descriptionLong": [
-   "A PERN stack poll app.", 
-   
-   "Users can create public/private polls with a limit of 20 choices and vote on any public polls. A user must have access to the link of a private poll to be able to view them but if a user knows the id of a private poll, they can still access it by typing it in the url in the right place.",
-   
-   "Which polls the user has voted on are kept track of in the local storage. Since local storage can be easily manipulated by a user, it's effectiveness is debatable.",
-   
-   "The PostgreSQL database is hosted on RDS and is just a single table storing polls. Each poll record has:", 
-   
-   "id (serial primary key), question (varchar(500)), choices (varchar(4500)) stored in a string as json [[\"choice\", votes], [\"choice\", votes]...], private (boolean), created_at (timestamp)."
-   ],
-  "techs":[
-     "ReactJS",
-     "React router",
-     "Styled Components",
-     "Express",
-     "PostgreSQL",
-     "Pg",
-     "RDS"
+    "A PERN stack poll app.",
+
+    "Users can create public/private polls with a limit of 20 choices and vote on any public polls. A user must have access to the link of a private poll to be able to view them but if a user knows the id of a private poll, they can still access it by typing it in the url in the right place.",
+
+    "Which polls the user has voted on are kept track of in the local storage. Since local storage can be easily manipulated by a user, it's effectiveness is debatable.",
+
+    "The PostgreSQL database is hosted on RDS and is just a single table storing polls. Each poll record has:",
+
+    "id (serial primary key), question (varchar(500)), choices (varchar(4500)) stored in a string as json [[\"choice\", votes], [\"choice\", votes]...], private (boolean), created_at (timestamp)."
   ],
-  "images":[
-     "proj-ss/poll1.png",
-     "proj-ss/poll2.png",
-     "proj-ss/poll3.png",
-     "proj-ss/poll4.png"
+  "techs": [
+    "ReactJS",
+    "React router",
+    "Styled Components",
+    "Express",
+    "PostgreSQL",
+    "Pg",
+    "RDS"
   ],
-  "githubLink":"https://github.com/Arelera/poll-app",
-  "demoLink":"https://polllo.herokuapp.com/",
-  "textTheme" : "light",
-  "color":"3A445D",
-  "waveNum":4,
-  "order": 3
+  "images": [
+    "proj-ss/poll1.png",
+    "proj-ss/poll2.png",
+    "proj-ss/poll3.png",
+    "proj-ss/poll4.png"
+  ],
+  "githubLink": "https://github.com/Arelera/poll-app",
+  "demoLink": "https://polllo.herokuapp.com/",
+  "textTheme": "dark",
+  "color": "F8AEB0",
+  "waveNum": 4,
+  "order": 4
 }

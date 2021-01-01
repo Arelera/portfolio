@@ -24,14 +24,25 @@
     font-weight: 400;
     margin-bottom: 1rem;
   }
-  .links {
-    svg {
-      transition: transform 0.2s ease;
-      &:hover {
-        transform: scale(1.1);
-      }
-      margin: 0 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  svg {
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
     }
+    margin: 0 1rem;
+  }
+}
+
+.resume {
+  font-size: clamp(1rem, 5vw, 1.75rem);
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
