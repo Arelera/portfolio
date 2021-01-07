@@ -15,20 +15,15 @@ export default function Footer() {
         <h5>Web Developer</h5>
       </div>
       <div className={S.contactInfo}>
-        <h4>Contact and Info</h4>
+        <h4>Contact & Info</h4>
         <ul>
           <li>
-            <a href="" target="_blank">
-              Email
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/arelalkim/" target="_blank">
               Linkedin
             </a>
           </li>
           <li>
-            <a href="/resume1t.pdf" target="_blank">
+            <a href="/resume.pdf" target="_blank">
               Resume
             </a>
           </li>

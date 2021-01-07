@@ -2,7 +2,7 @@
 
 .banner {
   color: $dark-text;
-  padding: 5rem;
+  padding: 6rem;
   margin-top: 60px;
   height: calc(100vh - 60px);
   max-width: 100%;
@@ -10,9 +10,10 @@
   z-index: 15;
 
   .fullName {
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(50px, 10vw, 80px);
     font-weight: 600;
     margin-bottom: 1rem;
+
     .lastname {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -20,7 +21,7 @@
     }
   }
   .description {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 400;
     margin-bottom: 1rem;
   }
@@ -39,7 +40,7 @@
 }
 
 .resume {
-  font-size: clamp(1rem, 5vw, 1.75rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.1);
@@ -53,6 +54,6 @@
 }
 @media screen and (max-width: 425px) {
   .banner {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
   }
 }

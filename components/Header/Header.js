@@ -5,7 +5,6 @@ import Navbar from './Navbar/Navbar';
 
 export default function Header({
   scrollToProjects,
-  scrollToContact,
   scrollToSkills,
   scrollToTop,
 }) {
@@ -15,7 +14,6 @@ export default function Header({
         scrollToTop={scrollToTop}
         scrollToSkills={scrollToSkills}
         scrollToProjects={scrollToProjects}
-        scrollToContact={scrollToContact}
       />
       <Banner scrollToSkills={scrollToSkills} />
       <Blobs />

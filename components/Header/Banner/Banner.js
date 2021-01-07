@@ -10,19 +10,16 @@ export default function Banner({ scrollToSkills }) {
       <h1 className={S.fullName}>
         Arel Alkım <span className={S.lastname}>Yurtsevenler</span>{' '}
       </h1>
-      <h2 className={S.description}>Self-taught web developer.</h2>
+      <h2 className={S.description}>Front-end Developer</h2>
 
       <div className={S.links}>
-        <a href="#" target="_blank">
-          <LinkedinIcon size="med" />
+        <a href="https://www.linkedin.com/in/arelalkim/" target="_blank">
+          <LinkedinIcon size="large" />
         </a>
         <a href="https://github.com/Arelera" target="_blank">
-          <GithubIcon size="med" />
+          <GithubIcon size="large" />
         </a>
-        <a href="#" target="_blank">
-          <MailIcon size="med" />
-        </a>
-        <a href="/resume1t.pdf" target="_blank">
+        <a href="/resume.pdf" target="_blank">
           <h3 className={S.resume}>RESUME</h3>
         </a>
       </div>

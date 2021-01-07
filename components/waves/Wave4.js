@@ -5,7 +5,7 @@ export default function Wave({ color }) {
     <svg
       className={S.wave}
       preserveAspectRatio="none"
-      viewBox="0 0 1440 240"
+      viewBox="0 0 1440 200"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

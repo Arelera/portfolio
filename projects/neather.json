@@ -12,8 +12,8 @@
   "images": ["proj-ss/n1.png", "proj-ss/n2.png", "proj-ss/n3.png"],
   "githubLink": "https://github.com/Arelera/weather-app-nextjs",
   "demoLink": "https://weather-app-nextjs.vercel.app/",
-  "textTheme": "light",
-  "color": "36393B",
+  "textTheme": "dark",
+  "color": "F9D6C5",
   "waveNum": 2,
   "order": 3
 }

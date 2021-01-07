@@ -32,8 +32,8 @@
   "images": ["proj-ss/todo2.png", "proj-ss/todo1.png"],
   "githubLink": "https://github.com/Arelera/todo-app",
   "demoLink": "https://todo-app0.herokuapp.com",
-  "textTheme": "dark",
-  "color": "F9D6C5",
+  "textTheme": "light",
+  "color": "36393B",
   "waveNum": 3,
   "order": 5
 }

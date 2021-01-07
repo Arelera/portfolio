@@ -20,7 +20,6 @@ export default function Project({ id, project }) {
     >
       <Wave color={project.color} />
       <div className={S.imgBox}>
-        {/* <img className={S.img} src={project.images[0]} alt="" /> */}
         <Carousel images={project.images} />
       </div>
 

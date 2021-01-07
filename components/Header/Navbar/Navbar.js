@@ -11,7 +11,7 @@ export default function Navbar({
   const isBrowser = () => typeof window !== 'undefined';
 
   const changeStyle = () => {
-    window.scrollY >= window.innerHeight - 400
+    window.scrollY >= window.innerHeight - 600
       ? setScrolled(true)
       : setScrolled(false);
   };
@@ -24,7 +24,6 @@ export default function Navbar({
     { text: 'Home', href: '#home', onClick: scrollToTop },
     { text: 'Skills', href: '#skills', onClick: scrollToSkills },
     { text: 'Projects', href: '#projects', onClick: scrollToProjects },
-    { text: 'Contact', href: '#contact', onClick: scrollToContact },
   ];
 
   return (

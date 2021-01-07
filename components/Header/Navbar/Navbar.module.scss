@@ -15,8 +15,15 @@
     z-index: 20;
   }
 
+  .navList {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .navItem {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     position: relative;
     cursor: pointer;
 
@@ -27,12 +34,12 @@
       position: absolute;
       z-index: 14; // so it's under the text
       transition: width 0.25s ease;
-      height: 3px;
+      height: 2px;
       width: 0px;
       right: 0px;
     }
     &::after {
-      bottom: 1px;
+      bottom: 2px;
     }
     &:hover::before,
     &:hover::after {
@@ -40,13 +47,6 @@
       left: 0;
       width: 100%;
     }
-  }
-
-  .navList {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 

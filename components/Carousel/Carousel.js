@@ -13,6 +13,7 @@ export default function Carousel({ images }) {
           setNum(num === 0 ? images.length - 1 : num - 1);
         }}
         className={`${S.btnLeft} ${images.length <= 1 && S.hide}`}
+        aria-label="View previous image"
       >
         <ChevLeftIcon />
       </button>
@@ -21,6 +22,7 @@ export default function Carousel({ images }) {
           setNum(num === images.length - 1 ? 0 : num + 1);
         }}
         className={`${S.btnRight} ${images.length <= 1 && S.hide}`}
+        aria-label="View next image"
       >
         <ChevRightIcon />
       </button>

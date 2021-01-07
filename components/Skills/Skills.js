@@ -4,31 +4,28 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 export default function Skills({ skillsRef }) {
   return (
     <section ref={skillsRef} className={S.skills}>
-      <SectionHeader title="SKILLS" />
+      <SectionHeader title="SKILLS" theme="dark" />
       <div className={S.lists}>
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Front-end</h3>
           <ul className={S.list}>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>ReactJS, react router</li>
-            <li>Redux, redux thunk</li>
-            <li>Styled Components</li>
-            <li>Sass</li>
-            <li>Axios</li>
+            <li className={S.listItem}>HTML5</li>
+            <li className={S.listItem}>CSS3/Sass</li>
+            <li className={S.listItem}>JavaScript</li>
+            <li className={S.listItem}>ReactJS</li>
+            <li className={S.listItem}>Redux</li>
+            <li className={S.listItem}>Styled Components</li>
           </ul>
         </div>
         <div className={S.listBox}>
           <h3 className={S.listTitle}>Back-end</h3>
           <ul className={S.list}>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li>PostgreSQL</li>
-            <li>Pg (node-postgres)</li>
-            <li>Jsonwebtoken</li>
-            <li>Bcrypt</li>
+            <li className={S.listItem}>NodeJS</li>
+            <li className={S.listItem}>ExpressJS</li>
+            <li className={S.listItem}>PostgreSQL</li>
+            <li className={S.listItem}>MongoDB</li>
+            <li className={S.listItem}>Jsonwebtoken</li>
+            <li className={S.listItem}>Bcrypt</li>
           </ul>
         </div>
       </div>

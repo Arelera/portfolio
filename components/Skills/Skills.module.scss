@@ -1,6 +1,7 @@
 @import '../../styles/colors.scss';
 
 .skills {
+  position: relative;
   min-height: 400px;
   width: 100%;
   padding-bottom: 3rem;
@@ -12,20 +13,33 @@
   justify-content: space-around;
 }
 
-.listBox {
+.listTitle {
+  white-space: nowrap;
+  font-size: 2rem;
+  text-align: center;
+  background: $orange-light;
+  padding: 0.25rem 4rem;
+}
+
+.listItem {
+  font-size: 1.25rem;
+  list-style: none;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
   .listTitle {
-    font-size: 2rem;
-    text-align: center;
-  }
-  li {
-    font-size: 1.25rem;
-    list-style: disc inside;
+    padding: 0 1.75rem;
   }
 }
 
 @media screen and (max-width: 460px) {
   .lists {
     flex-direction: column;
-    padding-left: 2rem;
+    margin: 0 2rem;
+  }
+  .listBox:last-child {
+    margin-top: 2rem;
   }
 }

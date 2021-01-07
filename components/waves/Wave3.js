@@ -5,13 +5,19 @@ export default function Wave({ color }) {
     <svg
       className={S.wave}
       preserveAspectRatio="none"
-      viewBox="0 0 1440 150"
+      viewBox="0 0 1440 220"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         fill={`#${color}`}
-        d="M0 32h80c80 0 240 0 400 10.7C640 53 800 75 960 90.7c160 16.3 320 26.3 400 32l80 5.3v192H0z"
+        d="M0 96l48 16c48 16 144 48 240 69 96 22 192 32 288 11s192-75 288-112 192-59 288-53c96 5 192 37 240 53l48 16v224H0z"
       />
     </svg>
   );
 }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path
+    fill="#09f"
+    d="M0 96l48 16c48 16 144 48 240 69 96 22 192 32 288 11s192-75 288-112 192-59 288-53c96 5 192 37 240 53l48 16v224H0z"
+  />
+</svg>;
