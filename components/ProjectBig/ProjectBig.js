@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 import ArrowLeftIcon from '../icons/ArrowLeftIcon';
 import GithubIcon from '../icons/GithubIcon';
-import Github2Icon from '../icons/Github2Icon';
 import HerokuIcon from '../icons/HerokuIcon';
 import VercelIcon from '../icons/VercelIcon';
 import Carousel from '../Carousel/Carousel';
