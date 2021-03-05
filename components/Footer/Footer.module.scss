@@ -34,9 +34,11 @@
 
 .contactInfo {
   h4 {
-    font-size: 1.25;
+    font-size: 1rem;
   }
   li {
+    font-size: 0.9rem;
+    line-height: 1.4;
     color: transparentize($orange-light, 0.2);
   }
 }

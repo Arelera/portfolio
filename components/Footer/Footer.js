@@ -12,7 +12,7 @@ export default function Footer() {
             <h4>Arel Alkım Yurtsevenler</h4>
           </a>
         </Link>
-        <h5>Web Developer</h5>
+        <h5>Software Developer</h5>
       </div>
       <div className={S.contactInfo}>
         <h4>Contact & Info</h4>
@@ -23,13 +23,13 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="/resume.pdf" target="_blank">
-              Resume
+            <a href="https://github.com/Arelera" target="_blank">
+              Github
             </a>
           </li>
           <li>
-            <a href="https://github.com/Arelera" target="_blank">
-              Github
+            <a href="https://github.com/Arelera/portfolio" target="_blank">
+              Built with Next.js
             </a>
           </li>
         </ul>

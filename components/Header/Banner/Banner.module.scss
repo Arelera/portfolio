@@ -30,7 +30,7 @@
 .links {
   display: flex;
   align-items: center;
-  svg {
+  a {
     transition: transform 0.2s ease;
     &:hover {
       transform: scale(1.1);
